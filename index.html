@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>联动菜单演示</title>
+    <meta charset="utf-8"/>
+</head>
+<body>
+
+<form id="form1">
+    <div>xml文件
+        <select data-cascade="area">
+
+        </select>
+        <select data-cascade="area">
+
+        </select>
+        <select data-cascade="area">
+
+        </select>
+    </div>
+    <div>json文件
+        <select data-cascade="book">
+
+        </select>
+        <select data-cascade="book">
+
+        </select>
+    </div>
+    <div>json
+        <select data-cascade="book-json">
+
+        </select>
+        <select data-cascade="book-json">
+
+        </select>
+    </div>
+</form>
+<script src="bower_components/jquery/dist/jquery.min.js"></script>
+<script src="dist/Xcascade.js"></script>
+<script>
+    $(function(){
+        $("select[data-cascade=area]").Cascade({
+            data:"Area.xml",
+            dataType:"xml",
+            value:['天津市','天津辖区','南开区'],
+            name:['province','city','county']
+        });
+        $("select[data-cascade=book]").Cascade({
+            data:"book.json",
+            dataType:"json",
+            value:['',''],
+            name:['book','price']
+        });
+        $("select[data-cascade=book-json]").Cascade({
+            data:{
+                "book":[
+                    {"name":"math","price":[1,2,3]},
+                    {"name":"physical","price":[4,5,6]}
+                ]
+            },
+            value:['',''],
+            name:['book','price']
+        })
+    })
+</script>
+</body>
+</html>
+

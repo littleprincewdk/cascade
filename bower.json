@@ -1,0 +1,23 @@
+{
+  "name": "x-cascade",
+  "homepage": "https://github.com/littleprincewdk/cascade",
+  "authors": [
+    "wudengke <2889110370@qq.com>"
+  ],
+  "description": "",
+  "main": "",
+  "keywords": [
+    "cascade select"
+  ],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "jquery": "^2.2.1"
+  }
+}

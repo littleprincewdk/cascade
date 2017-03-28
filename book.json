@@ -1,0 +1,7 @@
+{
+    "book":[
+        {"name":"math","price":[1,2,3]},
+        {"name":"physical","price":[4,5,6]}
+    ]
+}
+

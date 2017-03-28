@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="gb2312"?>
+<bookstore>
+    <book name="math">
+        <price name="1"/>
+        <price name="2"/>
+        <price name="3"/>
+    </book>
+    <book name="physical">
+        <price name="4"/>
+        <price name="5"/>
+        <price name="6"/>
+    </book>
+</bookstore>
