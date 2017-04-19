@@ -1,4 +1,6 @@
-#cascade 级联下拉框插件
+cascade 级联下拉框插件
+-
+[demo](http://princekin.tjxuechuang.com/projects/xcascade/index.html)
 
 	//依赖jquery
 	//xml文件
